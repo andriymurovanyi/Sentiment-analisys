@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/Parser.py" line="48" mnemonic="9" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="b18d0264-0c97-4530-8aaf-ac8834a9ffd7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Sentiment-anylisys.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/hiddencoder.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test-file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/hiddencoder.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/hiddencoder.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParseMessages.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PoS_description.json" beforeDir="false" afterPath="$PROJECT_DIR$/PoS_description.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SentimentApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/SentimentApp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface.ui" beforeDir="false" afterPath="$PROJECT_DIR$/interface.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result.json" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,52 +20,144 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Sentiment_anylisys$Test_file.coverage" NAME="Test-file Coverage Results" MODIFIED="1552545569163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Sentiment_anylisys$data_cleaner.coverage" NAME="data_cleaner Coverage Results" MODIFIED="1552996985932" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Twits-analysis" />
+    <SUITE FILE_PATH="coverage/Sentiment_anylisys$RussianParser.coverage" NAME="RussianParser Coverage Results" MODIFIED="1555697776406" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Sentiment_anylisys$Parser.coverage" NAME="Parser Coverage Results" MODIFIED="1556016383721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Sentiment_anylisys$Example.coverage" NAME="Example Coverage Results" MODIFIED="1555703355149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Sentiment_anylisys$SentimentApp.coverage" NAME="SentimentApp Coverage Results" MODIFIED="1555926906394" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Sentiment_anylisys$ParseMessages.coverage" NAME="ParseMessages Coverage Results" MODIFIED="1556011385927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Sentiment_anylisys$dbConnector.coverage" NAME="dbConnector Coverage Results" MODIFIED="1556015090167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Sentiment_anylisys$Model.coverage" NAME="Model Coverage Results" MODIFIED="1556094952925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Sentiment_anylisys$Test_file.coverage" NAME="Test-file Coverage Results" MODIFIED="1552550117652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Sentiment_anylisys$preprocess.coverage" NAME="preprocess Coverage Results" MODIFIED="1556008909969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Sentiment_anylisys$InstagramPhotoDownloader.coverage" NAME="InstagramPhotoDownloader Coverage Results" MODIFIED="1553212429673" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../../2 курс/Course work/Instagram Photo Downloader" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1594704819">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.closed" value="21" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.39" value="1" />
-          <entry key="project.open.time.53" value="1" />
+          <entry key="project.open.time.44" value="1" />
+          <entry key="project.open.time.45" value="2" />
+          <entry key="project.open.time.46" value="1" />
+          <entry key="project.open.time.48" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.50" value="1" />
+          <entry key="project.open.time.53" value="2" />
+          <entry key="project.open.time.54" value="2" />
+          <entry key="project.open.time.56" value="1" />
+          <entry key="project.open.time.58" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.60" value="1" />
           <entry key="project.open.time.63" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.65" value="1" />
+          <entry key="project.open.time.69" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.73" value="1" />
+          <entry key="project.open.time.92" value="1" />
+          <entry key="project.opened" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="1" />
+          <entry key="csv" value="2" />
+          <entry key="json" value="15" />
+          <entry key="py" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="1" />
+          <entry key="JSON" value="13" />
+          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="Python" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="92" />
+          <entry key="dummy" value="13" />
+          <entry key="json" value="1289" />
+          <entry key="py" value="15608" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="92" />
+          <entry key="JSON" value="1289" />
+          <entry key="PLAIN_TEXT" value="13" />
+          <entry key="Python" value="15606" />
+          <entry key="SQL" value="2" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Test-file.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Parser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="64" lean-forward="true" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
+            <state relative-caret-position="425">
+              <caret line="33" column="63" lean-forward="true" selection-start-line="33" selection-start-column="63" selection-end-line="33" selection-end-column="63" />
               <folding>
-                <element signature="e#40#50#0" expanded="true" />
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PoS_description.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Model.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="107">
+              <caret line="33" column="47" lean-forward="true" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
+              <folding>
+                <element signature="e#40#86#0" expanded="true" />
+                <marker date="1556094952851" expanded="true" signature="286:291" ph="..." />
+                <marker date="1556094952851" expanded="true" signature="793:1919" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/preprocess.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="259">
+              <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+              <folding>
+                <marker date="1556008909879" expanded="true" signature="73:1176" ph="..." />
+                <marker date="1556008909879" expanded="true" signature="320:325" ph="..." />
+                <marker date="1556008909879" expanded="true" signature="347:356" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dbConnector.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="751" selection-start-column="742" selection-end-column="751" />
             </state>
           </provider>
         </entry>
@@ -76,6 +171,43 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>persona</find>
+      <find>actor</find>
+      <find>ital</find>
+      <find>code</find>
+      <find>link</find>
+      <find>italic</find>
+      <find>😄</find>
+      <find>😓😭😢</find>
+      <find>😂😂</find>
+      <find>😅</find>
+      <find>🙏🙏</find>
+      <find>😆</find>
+      <find>🤔</find>
+      <find>😃</find>
+      <find>😕</find>
+      <find>😉</find>
+      <find>ДінісКо</find>
+      <find>Катя</find>
+      <find>Пиздец</find>
+      <find>Бля</find>
+      <find>349</find>
+      <find>Erca</find>
+      <find>chat</find>
+      <find>id</find>
+      <find>data</find>
+      <find>Дін</find>
+      <find>4855961349</find>
+      <find>Edward</find>
+      <find>354448699</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>Denis</replace>
+      <replace>Parser.dz</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -83,6 +215,24 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Test-file.py" />
+        <option value="$PROJECT_DIR$/Twits-analysis/data_cleaner.py" />
+        <option value="$PROJECT_DIR$/SentimentApp.py" />
+        <option value="$PROJECT_DIR$/Russian Parser.py" />
+        <option value="$PROJECT_DIR$/RussianParser.py" />
+        <option value="$PROJECT_DIR$/Example.py" />
+        <option value="$PROJECT_DIR$/vova.json" />
+        <option value="$PROJECT_DIR$/PoS_description.json" />
+        <option value="$PROJECT_DIR$/first.json" />
+        <option value="$PROJECT_DIR$/test.json" />
+        <option value="$PROJECT_DIR$/second.json" />
+        <option value="$PROJECT_DIR$/data.json" />
+        <option value="$PROJECT_DIR$/result.json" />
+        <option value="$PROJECT_DIR$/preprocess.py" />
+        <option value="$PROJECT_DIR$/Analyzer.py" />
+        <option value="$PROJECT_DIR$/ParseMessages.py" />
+        <option value="$PROJECT_DIR$/dbConnector.py" />
+        <option value="$PROJECT_DIR$/Parser.py" />
+        <option value="$PROJECT_DIR$/Model.py" />
       </list>
     </option>
   </component>
@@ -104,7 +254,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -116,6 +265,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -123,6 +273,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -136,8 +287,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Test-file" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.Model">
+    <configuration name="Model" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Sentiment-anylisys" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -150,7 +301,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test-file.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Model.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -159,9 +310,108 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="ParseMessages" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Sentiment-anylisys" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\hiddencoder\Desktop\University\3 курс\Course work\Sentiment-anylisys\Parser.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Parser" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Sentiment-anylisys" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Parser.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="dbConnector" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Sentiment-anylisys" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dbConnector.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="preprocess" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Sentiment-anylisys" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/preprocess.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.ParseMessages" />
+      <item itemvalue="Python.dbConnector" />
+      <item itemvalue="Python.preprocess" />
+      <item itemvalue="Python.Model" />
+      <item itemvalue="Python.Parser" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Test-file" />
+        <item itemvalue="Python.Model" />
+        <item itemvalue="Python.Parser" />
+        <item itemvalue="Python.dbConnector" />
+        <item itemvalue="Python.ParseMessages" />
+        <item itemvalue="Python.preprocess" />
       </list>
     </recent_temporary>
   </component>
@@ -178,26 +428,35 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26096824" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1482602" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3295082" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3295082" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3295082" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -211,13 +470,165 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Model.py</url>
+          <line>33</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Model.py</url>
+          <line>42</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Model.py</url>
+          <line>38</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Model.py</url>
+          <line>41</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Model.py</url>
+          <line>37</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Model.py</url>
+          <line>43</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Test-file.py">
+    <entry file="file://$PROJECT_DIR$/Test-file.py" />
+    <entry file="file://$PROJECT_DIR$/Twits-analysis/TrainingSets/cleaned_data.csv" />
+    <entry file="file://$PROJECT_DIR$/Twits-analysis/TrainingSets/negative.csv" />
+    <entry file="file://$PROJECT_DIR$/Twits-analysis/data_cleaner.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/textblob/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="64" lean-forward="true" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/textblob/sentiments.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/textblob/blob.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-132" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../2 курс/Course work/Instagram Photo Downloader/InstagramPhotoDownloader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/textblob/classifiers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="298" column="72" selection-start-line="298" selection-start-column="72" selection-end-line="298" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vova.json" />
+    <entry file="file://$PROJECT_DIR$/Example.py" />
+    <entry file="file://$PROJECT_DIR$/RussianParser.py" />
+    <entry file="file://$PROJECT_DIR$/first.json" />
+    <entry file="file://$PROJECT_DIR$/test.json" />
+    <entry file="file://$PROJECT_DIR$/SentimentApp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/second.json" />
+    <entry file="file://$PROJECT_DIR$/result.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="18441" column="7" lean-forward="true" selection-start-line="18441" selection-start-column="7" selection-end-line="18441" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbConnector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="751" selection-start-column="742" selection-end-column="751" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="33" column="63" lean-forward="true" selection-start-line="33" selection-start-column="63" selection-end-line="33" selection-end-column="63" />
           <folding>
-            <element signature="e#40#50#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+          <folding>
+            <marker date="1556008909879" expanded="true" signature="73:1176" ph="..." />
+            <marker date="1556008909879" expanded="true" signature="320:325" ph="..." />
+            <marker date="1556008909879" expanded="true" signature="347:356" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PoS_description.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/mysql/connector/cursor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="81" column="12" lean-forward="true" selection-start-line="81" selection-start-column="12" selection-end-line="81" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="33" column="47" lean-forward="true" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
+          <folding>
+            <element signature="e#40#86#0" expanded="true" />
+            <marker date="1556094952851" expanded="true" signature="286:291" ph="..." />
+            <marker date="1556094952851" expanded="true" signature="793:1919" ph="..." />
           </folding>
         </state>
       </provider>

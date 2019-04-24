@@ -1,6 +1,7 @@
 import mysql.connector
 
 
+
 class Connector:
     """
     Connection to database
@@ -10,7 +11,6 @@ class Connector:
         self.__cnx = mysql.connector.connect(user="root", password="Kjkszpj",
                                              host="localhost", database="sentimentmodel")
         self.__cursor = self.__cnx.cursor()
-
 
     @property
     def cnx(self):

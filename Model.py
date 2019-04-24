@@ -44,8 +44,7 @@ class Analyzer:
                 sql_messages = "INSERT INTO message (sender, sender_id, " \
                                "m_date, m_time, text, idChat) VALUES (%s, %s, %s, %s, %s, %s)"
 
-                print(i + [id_ch])
-                self._connector.cursor.execute(sql_messages, i + (id_ch, ))
+                self._connector.cursor.execute(sql_messages, i + [id_ch])
                 counter += 1
 
         self._connector.cnx.commit()

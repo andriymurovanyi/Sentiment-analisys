@@ -13,7 +13,6 @@ class DataExtractor:
         self.__json_dump()
         self.__result_data = self.__get_data()
 
-
     def __json_read(self):
         """
         Reader.
@@ -24,8 +23,14 @@ class DataExtractor:
         :return: reader_object
         """
         with open(self.__file, 'r', encoding=self.__encoding) as file:
+
             data = json.load(file)
-            list_to_insert = data['chats']['list']
+            if data['chats']['list']:
+                list_to_insert = data['chats']['list']
+            else:
+                raise ValueError
+
+
         return list_to_insert
 
     def __json_dump(self):

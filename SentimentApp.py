@@ -2,8 +2,12 @@
 
 import sys
 from PyQt5 import uic
-from PyQt5.QtWidgets import QMainWindow, QWidget, QApplication, QLabel, QVBoxLayout, QHBoxLayout, QScrollArea
+from PyQt5.QtWidgets import QMainWindow, QWidget, QApplication, QLabel, \
+    QVBoxLayout, QHBoxLayout, QScrollArea, QFileDialog, QMessageBox
 from Parser import Parser
+from preprocess import DataExtractor
+from json.decoder import JSONDecodeError
+from dbConnector import Connector
 
 
 class View(QMainWindow):
@@ -27,21 +31,26 @@ class View(QMainWindow):
         self.chat_id_field = self.ui.chat_id_field
         self.submit_button = self.ui.submit_button
 
+        self._connector = Connector()
+
         self.initUI()
 
     def initUI(self):
 
         self.ui.setFixedSize(817, 600)
+
         self.ui.setWindowTitle('Analyzer')
 
         self.scrollArea.setWidgetResizable(True)
         self.scrollArea.setWidget(self.scrollAreaWidgetContents)
 
-        self.layout.addWidget(self.scrollArea)
-        self.user_id_field.setText(str(self.parser.user_id))
-        self.user_id_field.setEnabled(False)  # TODO <Something with user id field>
-        self.chat_id_field.setText(str(self.parser.chat_id))
-        self.submit_button.clicked.connect(self.load_preview)
+        self.ui.import_button.clicked.connect(self.data_import)
+        self.ui.chats_list.addItems(["<choose chat here>"])
+        # self.layout.addWidget(self.scrollArea)
+        # self.user_id_field.setText(str(self.parser.user_id))
+        # self.user_id_field.setEnabled(False)  # TODO <Something with user id field>
+        # self.chat_id_field.setText(str(self.parser.chat_id))
+        # self.submit_button.clicked.connect(self.load_preview)
 
         self.ui.show()
 
@@ -72,6 +81,26 @@ class View(QMainWindow):
                     label.setWordWrap(True)
                     self.verticalLayout.addWidget(label, 0)
                     self.labels[name] = label
+
+    def data_import(self):
+        options = QFileDialog.Options()
+        options |= QFileDialog.DontUseNativeDialog
+        directory = QFileDialog.getOpenFileName(self, "Choose you're json file", "json files(*.json)", options=options)
+        if directory[0]:
+            file_name = directory[0].split("/")[-1]
+            print(directory)
+            try:
+                extr = DataExtractor(file_name)
+            except (ValueError, IndexError):
+                warn = QMessageBox.warning(self, 'Message',
+                                             "Wrong json format were gived!", QMessageBox.Ok)
+            else:
+                select_chats = "SELECT * FROM chat"
+                self._connector.cursor.execute(select_chats)
+                records = self._connector.cursor.fetchall()
+                for i in records:
+                    self.ui.chats_list.addItems([i[1]])
+                return extr.result_data
 
     def noEvent(self):
         pass

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/Parser.py" line="48" mnemonic="9" />
+    <bookmark url="file://$PROJECT_DIR$/Parser.py" line="50" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b18d0264-0c97-4530-8aaf-ac8834a9ffd7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/hiddencoder.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/hiddencoder.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParseMessages.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PoS_description.json" beforeDir="false" afterPath="$PROJECT_DIR$/PoS_description.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/Parser.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SentimentApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/SentimentApp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbConnector.py" beforeDir="false" afterPath="$PROJECT_DIR$/dbConnector.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interface.ui" beforeDir="false" afterPath="$PROJECT_DIR$/interface.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/preprocess.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,15 +22,15 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Sentiment_anylisys$data_cleaner.coverage" NAME="data_cleaner Coverage Results" MODIFIED="1552996985932" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Twits-analysis" />
     <SUITE FILE_PATH="coverage/Sentiment_anylisys$RussianParser.coverage" NAME="RussianParser Coverage Results" MODIFIED="1555697776406" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Sentiment_anylisys$Parser.coverage" NAME="Parser Coverage Results" MODIFIED="1556016383721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Sentiment_anylisys$Parser.coverage" NAME="Parser Coverage Results" MODIFIED="1556101775280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Sentiment_anylisys$Example.coverage" NAME="Example Coverage Results" MODIFIED="1555703355149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Sentiment_anylisys$SentimentApp.coverage" NAME="SentimentApp Coverage Results" MODIFIED="1555926906394" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Sentiment_anylisys$SentimentApp.coverage" NAME="SentimentApp Coverage Results" MODIFIED="1556133725381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Sentiment_anylisys$ParseMessages.coverage" NAME="ParseMessages Coverage Results" MODIFIED="1556011385927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Sentiment_anylisys$dbConnector.coverage" NAME="dbConnector Coverage Results" MODIFIED="1556015090167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Sentiment_anylisys$Model.coverage" NAME="Model Coverage Results" MODIFIED="1556094952925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Sentiment_anylisys$Model.coverage" NAME="Model Coverage Results" MODIFIED="1556131319785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Sentiment_anylisys$Test_file.coverage" NAME="Test-file Coverage Results" MODIFIED="1552550117652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Sentiment_anylisys$preprocess.coverage" NAME="preprocess Coverage Results" MODIFIED="1556008909969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Sentiment_anylisys$InstagramPhotoDownloader.coverage" NAME="InstagramPhotoDownloader Coverage Results" MODIFIED="1553212429673" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../../2 курс/Course work/Instagram Photo Downloader" />
+    <SUITE FILE_PATH="coverage/Sentiment_anylisys$preprocess.coverage" NAME="preprocess Coverage Results" MODIFIED="1556133617644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Sentiment_anylisys$InstagramPhotoDownloader.coverage" NAME="InstagramPhotoDownloader Coverage Results" MODIFIED="1556132268831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../../2 курс/Course work/Instagram Photo Downloader" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1594704819">
@@ -65,29 +65,29 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="2" />
-          <entry key="json" value="15" />
-          <entry key="py" value="25" />
+          <entry key="json" value="20" />
+          <entry key="py" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JSON" value="13" />
+          <entry key="JSON" value="18" />
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Python" value="25" />
+          <entry key="Python" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="13" />
           <entry key="json" value="1289" />
-          <entry key="py" value="15608" />
+          <entry key="py" value="16966" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="1289" />
           <entry key="PLAIN_TEXT" value="13" />
-          <entry key="Python" value="15606" />
+          <entry key="Python" value="16964" />
           <entry key="SQL" value="2" />
         </counts>
       </usages-collector>
@@ -98,8 +98,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Parser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="33" column="63" lean-forward="true" selection-start-line="33" selection-start-column="63" selection-end-line="33" selection-end-column="63" />
+            <state relative-caret-position="85">
+              <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -110,35 +110,49 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PoS_description.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+            <state relative-caret-position="102">
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="33" column="47" lean-forward="true" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
+            <state relative-caret-position="136">
+              <caret line="40" column="48" lean-forward="true" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
               <folding>
                 <element signature="e#40#86#0" expanded="true" />
-                <marker date="1556094952851" expanded="true" signature="286:291" ph="..." />
-                <marker date="1556094952851" expanded="true" signature="793:1919" ph="..." />
+                <marker date="1556133001702" expanded="true" signature="286:291" ph="..." />
+                <marker date="1556133001702" expanded="true" signature="793:1882" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SentimentApp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="191">
+              <caret line="92" selection-start-line="92" selection-end-line="92" />
+              <folding>
+                <element signature="e#40#50#0" expanded="true" />
+                <marker date="1556133271041" expanded="true" signature="379:384" ph="..." />
+                <marker date="1556133271041" expanded="true" signature="3515:4089" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/preprocess.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+            <state relative-caret-position="221">
+              <caret line="29" column="32" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
               <folding>
-                <marker date="1556008909879" expanded="true" signature="73:1176" ph="..." />
-                <marker date="1556008909879" expanded="true" signature="320:325" ph="..." />
-                <marker date="1556008909879" expanded="true" signature="347:356" ph="..." />
+                <marker date="1556133610728" expanded="true" signature="73:1281" ph="..." />
+                <marker date="1556133610728" expanded="true" signature="319:324" ph="..." />
+                <marker date="1556133610728" expanded="true" signature="346:355" ph="..." />
               </folding>
             </state>
           </provider>
@@ -147,17 +161,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dbConnector.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="751" selection-start-column="742" selection-end-column="751" />
+            <state relative-caret-position="209">
+              <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -216,7 +221,6 @@
       <list>
         <option value="$PROJECT_DIR$/Test-file.py" />
         <option value="$PROJECT_DIR$/Twits-analysis/data_cleaner.py" />
-        <option value="$PROJECT_DIR$/SentimentApp.py" />
         <option value="$PROJECT_DIR$/Russian Parser.py" />
         <option value="$PROJECT_DIR$/RussianParser.py" />
         <option value="$PROJECT_DIR$/Example.py" />
@@ -225,14 +229,15 @@
         <option value="$PROJECT_DIR$/first.json" />
         <option value="$PROJECT_DIR$/test.json" />
         <option value="$PROJECT_DIR$/second.json" />
-        <option value="$PROJECT_DIR$/data.json" />
         <option value="$PROJECT_DIR$/result.json" />
-        <option value="$PROJECT_DIR$/preprocess.py" />
         <option value="$PROJECT_DIR$/Analyzer.py" />
         <option value="$PROJECT_DIR$/ParseMessages.py" />
+        <option value="$PROJECT_DIR$/data.json" />
         <option value="$PROJECT_DIR$/dbConnector.py" />
         <option value="$PROJECT_DIR$/Parser.py" />
         <option value="$PROJECT_DIR$/Model.py" />
+        <option value="$PROJECT_DIR$/SentimentApp.py" />
+        <option value="$PROJECT_DIR$/preprocess.py" />
       </list>
     </option>
   </component>
@@ -287,7 +292,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Model">
+  <component name="RunManager" selected="Python.SentimentApp">
+    <configuration name="InstagramPhotoDownloader" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Sentiment-anylisys" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../2 курс/Course work/Instagram Photo Downloader" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../2 курс/Course work/Instagram Photo Downloader/InstagramPhotoDownloader.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Model" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Sentiment-anylisys" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -302,28 +329,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Model.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ParseMessages" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Sentiment-anylisys" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\hiddencoder\Desktop\University\3 курс\Course work\Sentiment-anylisys\Parser.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -354,7 +359,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="dbConnector" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="SentimentApp" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Sentiment-anylisys" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -367,7 +372,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dbConnector.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SentimentApp.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -399,19 +404,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.ParseMessages" />
-      <item itemvalue="Python.dbConnector" />
-      <item itemvalue="Python.preprocess" />
       <item itemvalue="Python.Model" />
       <item itemvalue="Python.Parser" />
+      <item itemvalue="Python.SentimentApp" />
+      <item itemvalue="Python.preprocess" />
+      <item itemvalue="Python.InstagramPhotoDownloader" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.SentimentApp" />
+        <item itemvalue="Python.preprocess" />
+        <item itemvalue="Python.InstagramPhotoDownloader" />
         <item itemvalue="Python.Model" />
         <item itemvalue="Python.Parser" />
-        <item itemvalue="Python.dbConnector" />
-        <item itemvalue="Python.ParseMessages" />
-        <item itemvalue="Python.preprocess" />
       </list>
     </recent_temporary>
   </component>
@@ -446,8 +451,8 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3295082" />
@@ -479,29 +484,24 @@
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Model.py</url>
-          <line>42</line>
-          <option name="timeStamp" value="40" />
+          <url>file://$PROJECT_DIR$/SentimentApp.py</url>
+          <line>87</line>
+          <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Model.py</url>
-          <line>38</line>
-          <option name="timeStamp" value="41" />
+          <url>file://$PROJECT_DIR$/SentimentApp.py</url>
+          <line>89</line>
+          <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Model.py</url>
-          <line>41</line>
-          <option name="timeStamp" value="42" />
+          <url>file://$PROJECT_DIR$/SentimentApp.py</url>
+          <line>90</line>
+          <option name="timeStamp" value="50" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Model.py</url>
-          <line>37</line>
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Model.py</url>
-          <line>43</line>
-          <option name="timeStamp" value="45" />
+          <url>file://$PROJECT_DIR$/SentimentApp.py</url>
+          <line>92</line>
+          <option name="timeStamp" value="51" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -530,13 +530,6 @@
         <state relative-caret-position="-132" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../2 курс/Course work/Instagram Photo Downloader/InstagramPhotoDownloader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/textblob/classifiers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
@@ -549,68 +542,11 @@
     <entry file="file://$PROJECT_DIR$/RussianParser.py" />
     <entry file="file://$PROJECT_DIR$/first.json" />
     <entry file="file://$PROJECT_DIR$/test.json" />
-    <entry file="file://$PROJECT_DIR$/SentimentApp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/second.json" />
     <entry file="file://$PROJECT_DIR$/result.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="18441" column="7" lean-forward="true" selection-start-line="18441" selection-start-column="7" selection-end-line="18441" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbConnector.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="751" selection-start-column="742" selection-end-column="751" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="33" column="63" lean-forward="true" selection-start-line="33" selection-start-column="63" selection-end-line="33" selection-end-column="63" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/preprocess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
-          <folding>
-            <marker date="1556008909879" expanded="true" signature="73:1176" ph="..." />
-            <marker date="1556008909879" expanded="true" signature="320:325" ph="..." />
-            <marker date="1556008909879" expanded="true" signature="347:356" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PoS_description.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/mysql/connector/cursor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="81" column="12" lean-forward="true" selection-start-line="81" selection-start-column="12" selection-end-line="81" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -621,14 +557,97 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1195">
+          <caret column="11942" selection-start-column="11942" selection-end-column="11942" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/mysql/connector/connection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="441" selection-start-line="441" selection-end-line="441" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/mysql/connector/cursor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="894" selection-start-line="894" selection-end-line="894" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../2 курс/Course work/Instagram Photo Downloader/InstagramPhotoDownloader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="81" column="39" lean-forward="true" selection-start-line="81" selection-start-column="39" selection-end-line="81" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/json/decoder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="354" column="66" selection-start-line="354" selection-start-column="12" selection-end-line="354" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbConnector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="33" column="47" lean-forward="true" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
+        <state relative-caret-position="136">
+          <caret line="40" column="48" lean-forward="true" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
           <folding>
             <element signature="e#40#86#0" expanded="true" />
-            <marker date="1556094952851" expanded="true" signature="286:291" ph="..." />
-            <marker date="1556094952851" expanded="true" signature="793:1919" ph="..." />
+            <marker date="1556133001702" expanded="true" signature="286:291" ph="..." />
+            <marker date="1556133001702" expanded="true" signature="793:1882" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PoS_description.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SentimentApp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
+          <folding>
+            <element signature="e#40#50#0" expanded="true" />
+            <marker date="1556133271041" expanded="true" signature="379:384" ph="..." />
+            <marker date="1556133271041" expanded="true" signature="3515:4089" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="29" column="32" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+          <folding>
+            <marker date="1556133610728" expanded="true" signature="73:1281" ph="..." />
+            <marker date="1556133610728" expanded="true" signature="319:324" ph="..." />
+            <marker date="1556133610728" expanded="true" signature="346:355" ph="..." />
           </folding>
         </state>
       </provider>

@@ -19,12 +19,13 @@ class Parser:
 
     def extract_info(self):
         messages = []
+        bindings = {}
         for i in range(len(Parser.data)):
             chat_name = Parser.data[i]['name']
             chat_type = Parser.data[i]['type']
             chat_id = Parser.data[i]['id']
             self.__chats.append((chat_name, chat_type, chat_id))
-            print(chat_id)
+
             tmp_messages = Parser.data[i]['messages']
             for j in range(len(tmp_messages)):
                 sender = tmp_messages[j]['from']
@@ -32,6 +33,7 @@ class Parser:
                 date = tmp_messages[j]['date']
                 text = tmp_messages[j]['text']
                 messages.append((sender, sender_id, date, text))
+
         for message in messages:
             message = list(message)
             tmp = message[2].split("T")

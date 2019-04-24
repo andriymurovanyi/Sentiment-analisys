@@ -42,62 +42,13 @@
       <string>Chat preview</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="user_id_field">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>460</y>
-       <width>121</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(221, 216, 214);</string>
-     </property>
-     <property name="placeholderText">
-      <string>User id</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="submit_button">
-     <property name="geometry">
-      <rect>
-       <x>280</x>
-       <y>460</y>
-       <width>75</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(129, 255, 140);
-font: 75 12pt &quot;Times New Roman&quot;;</string>
-     </property>
-     <property name="text">
-      <string>Submit</string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="chat_id_field">
-     <property name="geometry">
-      <rect>
-       <x>140</x>
-       <y>460</y>
-       <width>121</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(221, 216, 214);</string>
-     </property>
-     <property name="placeholderText">
-      <string>Chat id</string>
-     </property>
-    </widget>
     <widget class="QScrollArea" name="scrollArea">
      <property name="geometry">
       <rect>
        <x>10</x>
        <y>59</y>
        <width>351</width>
-       <height>391</height>
+       <height>421</height>
       </rect>
      </property>
      <property name="widgetResizable">
@@ -109,7 +60,7 @@ font: 75 12pt &quot;Times New Roman&quot;;</string>
         <x>0</x>
         <y>0</y>
         <width>349</width>
-        <height>389</height>
+        <height>419</height>
        </rect>
       </property>
      </widget>

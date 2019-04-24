@@ -1,9 +1,11 @@
 # Created by hiddencoder at 21.03.2019
 
 import sys
+
+from PyQt5.QtCore import Qt
 from PyQt5 import uic
 from PyQt5.QtWidgets import QMainWindow, QWidget, QApplication, QLabel, \
-    QVBoxLayout, QHBoxLayout, QScrollArea, QFileDialog, QMessageBox
+    QVBoxLayout, QHBoxLayout, QScrollArea, QFileDialog, QMessageBox, QCheckBox, QSizePolicy, QSpacerItem
 from Parser import Parser
 from preprocess import DataExtractor
 from json.decoder import JSONDecodeError
@@ -26,10 +28,8 @@ class View(QMainWindow):
         self.verticalLayout = QVBoxLayout(self.scrollAreaWidgetContents)
 
         self.labels = dict()  # Dict of all created labels
-
-        self.user_id_field = self.ui.user_id_field
-        self.chat_id_field = self.ui.chat_id_field
-        self.submit_button = self.ui.submit_button
+        self.chats = []
+        self.checks = []
 
         self._connector = Connector()
 
@@ -45,42 +45,10 @@ class View(QMainWindow):
         self.scrollArea.setWidget(self.scrollAreaWidgetContents)
 
         self.ui.import_button.clicked.connect(self.data_import)
-        self.ui.chats_list.addItems(["<choose chat here>"])
-        # self.layout.addWidget(self.scrollArea)
-        # self.user_id_field.setText(str(self.parser.user_id))
-        # self.user_id_field.setEnabled(False)  # TODO <Something with user id field>
-        # self.chat_id_field.setText(str(self.parser.chat_id))
-        # self.submit_button.clicked.connect(self.load_preview)
+        self.show_chat_list()
+        self.ui.chats_list.activated[str].connect(self.onActivated)
 
         self.ui.show()
-
-    def load_preview(self):
-        # TODO <Data type checking>
-        self.parser.user_id = int(self.user_id_field.text())
-        self.parser.chat_id = int(self.chat_id_field.text())
-
-        # Clean area before filling.
-        for i in reversed(range(self.verticalLayout.count())):
-            self.verticalLayout.itemAt(i).widget().setParent(None)
-
-        for i in range(len(self.parser.data)):
-            name = 'q_label_{}'.format(i)
-            if self.parser.data[i]['id'] == self.parser.chat_id:
-                for message in self.parser.data[i]['messages']:
-                    label = QLabel()
-                    label.setObjectName(name)
-                    label.setText("{}: {}".format(message['from'], message['text']))
-
-                    # Set background color depending on who wrote message.
-                    if message['from_id'] != self.parser.user_id:
-                        label.setStyleSheet("QLabel { background-color : #13ff36 ;"
-                                            "font: 75 12pt 'Times New Roman'}")
-                    else:
-                        label.setStyleSheet("QLabel { background-color : #1048ff ;"
-                                            "font: 75 12pt 'Times New Roman'}")
-                    label.setWordWrap(True)
-                    self.verticalLayout.addWidget(label, 0)
-                    self.labels[name] = label
 
     def data_import(self):
         options = QFileDialog.Options()
@@ -95,12 +63,71 @@ class View(QMainWindow):
                 warn = QMessageBox.warning(self, 'Message',
                                              "Wrong json format were gived!", QMessageBox.Ok)
             else:
-                select_chats = "SELECT * FROM chat"
-                self._connector.cursor.execute(select_chats)
-                records = self._connector.cursor.fetchall()
-                for i in records:
-                    self.ui.chats_list.addItems([i[1]])
                 return extr.result_data
+
+    def onActivated(self):
+        current_selection = self.ui.chats_list.currentText()
+        select_id_ch = "SELECT idChat from chat where chat_name = '{}'".format(str(current_selection))
+        self._connector.cursor.execute(select_id_ch)
+        id_ch = self._connector.cursor.fetchone()[0]
+
+
+        select_messages = "SELECT sender, sender_id, text from message where idChat = {}".format(id_ch)
+        self._connector.cursor.execute(select_messages)
+        msg_lst = self._connector.cursor.fetchall()
+        for msg in msg_lst:
+            self.chats.append(msg)
+
+        self.deleteItems(self.verticalLayout)
+
+        for i in range(len(self.chats) - 1):
+            name = 'q_label_{}'.format(i)
+            label = QLabel()
+            check_box = QCheckBox()
+            label.setObjectName(name)
+            label.setText("{}: {}".format(self.chats[i][0], self.chats[i][2]))
+
+            # if self.chats[i][0] == self.chats[i + 1][0]:
+            #     label.setStyleSheet("background-color: rgb(194, 197, 255);")
+            # Set background color depending on who wrote message.
+            spaceItem = QSpacerItem(100, 10, QSizePolicy.Expanding)
+            label.setWordWrap(True)
+            hor_layout = QHBoxLayout()
+            hor_layout.addWidget(label)
+            hor_layout.addSpacerItem(spaceItem)
+            hor_layout.addWidget(check_box)
+            hor_layout.setContentsMargins(0, 0, 0, 0)
+            check_box.stateChanged.connect(self.item_checked)
+            self.verticalLayout.addLayout(hor_layout, 0)
+            self.checks.append(check_box)
+            self.labels[name] = label
+        self.chats.clear()
+
+    def item_checked(self, state):
+
+        if state == Qt.Checked:
+            print("Checked!")
+
+        else:
+            print("Unchecked!")
+
+    def show_chat_list(self):
+        self.ui.chats_list.addItems(["<choose chat here>"])
+        select_chats = "SELECT * FROM chat"
+        self._connector.cursor.execute(select_chats)
+        records = self._connector.cursor.fetchall()
+        for i in records:
+            self.ui.chats_list.addItem(i[1])
+
+    def deleteItems(self, layout):
+        if layout is not None:
+            while layout.count():
+                item = layout.takeAt(0)
+                widget = item.widget()
+                if widget is not None:
+                    widget.deleteLater()
+                else:
+                    self.deleteItems(item.layout())
 
     def noEvent(self):
         pass

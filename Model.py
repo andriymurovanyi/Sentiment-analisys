@@ -31,9 +31,16 @@ class Analyzer:
         sql_chats = "INSERT INTO chat (chat_name, chat_type, chat_id) VALUES (%s, %s, %s)"
         self._connector.cursor.executemany(sql_chats, chats)
         self._connector.cnx.commit()
-        print(self._connector.cursor.lastrowid)
+        select_chat_id = "select idChat from chat where chat_id = {}".format(4662959916)
+        self._connector.cursor.execute(select_chat_id)
+        id_ch = self._connector.cursor.fetchone()[0]
+        for i in range(1853 + 106 + 59, 1853 + 106 + 59 + 26):
+            sql_messages = "INSERT INTO message (sender, sender_id, " \
+                                       "m_date, m_time, text, idChat) VALUES (%s, %s, %s, %s, %s, %s)"
+
+            self._connector.cursor.execute(sql_messages, messages[i] + [id_ch])
+
         for i in messages:
-            select_chat_id = "select idChat from chat where chat_id = {}".format(i[2])
             self._connector.cursor.execute(select_chat_id)
             if self._connector.cursor.fetchone():
                 id_ch = self._connector.cursor.fetchall()[0][0]
@@ -166,12 +173,12 @@ class Analyzer:
         self._chat_id = new_chat_id
 
 
-if __name__ == '__main__':
-    print('=' * 200)
-    print('Replicas splitting started')
-    analyzer = Analyzer(chat_id=4855961349)
-    parser = Parser()
-    analyzer.db_filling(parser.chats, parser.messages_parsed)
+# if __name__ == '__main__':
+#     print('=' * 200)
+#     print('Replicas splitting started')
+#     analyzer = Analyzer(chat_id=4855961349)
+#     parser = Parser()
+#     analyzer.db_filling(parser.chats, parser.messages_parsed)
 
 
     # print('Lemmatization started!')

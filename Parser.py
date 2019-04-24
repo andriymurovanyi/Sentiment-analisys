@@ -19,7 +19,6 @@ class Parser:
 
     def extract_info(self):
         messages = []
-        bindings = {}
         for i in range(len(Parser.data)):
             chat_name = Parser.data[i]['name']
             chat_type = Parser.data[i]['type']
@@ -27,6 +26,7 @@ class Parser:
             self.__chats.append((chat_name, chat_type, chat_id))
 
             tmp_messages = Parser.data[i]['messages']
+            print(len(tmp_messages))
             for j in range(len(tmp_messages)):
                 sender = tmp_messages[j]['from']
                 sender_id = tmp_messages[j]['from_id']

@@ -29,8 +29,6 @@ class DataExtractor:
                 list_to_insert = data['chats']['list']
             else:
                 raise ValueError
-
-
         return list_to_insert
 
     def __json_dump(self):

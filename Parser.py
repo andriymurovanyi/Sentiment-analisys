@@ -13,12 +13,11 @@ class Parser:
     def __init__(self):
         self.__chats = []
 
-        self.__messages_parsed = []
+        self.__messages = []
 
         self.extract_info()
 
     def extract_info(self):
-        messages = []
         for i in range(len(Parser.data)):
             chat_name = Parser.data[i]['name']
             chat_type = Parser.data[i]['type']
@@ -26,29 +25,22 @@ class Parser:
             self.__chats.append((chat_name, chat_type, chat_id))
 
             tmp_messages = Parser.data[i]['messages']
-            print(len(tmp_messages))
+
+            tmp_arr = []
             for j in range(len(tmp_messages)):
                 sender = tmp_messages[j]['from']
                 sender_id = tmp_messages[j]['from_id']
-                date = tmp_messages[j]['date']
+                date, time = tmp_messages[j]['date'].split("T")
                 text = tmp_messages[j]['text']
-                messages.append((sender, sender_id, date, text))
-
-        for message in messages:
-            message = list(message)
-            tmp = message[2].split("T")
-            message.remove(message[2])
-            message.insert(2, tmp[0])
-            message.insert(3, tmp[1])
-            self.__messages_parsed.append(message)
+                tmp_arr.append((sender, sender_id, date, time, text))
+            self.__messages.append(tmp_arr)
 
     @property
-    def messages_parsed(self):
-        return self.__messages_parsed
+    def messages(self):
+        return self.__messages
 
     @property
     def chats(self):
         return self.__chats
 
-
-
+p = Parser()

@@ -59,11 +59,12 @@ class View(QMainWindow):
             print(directory)
             try:
                 extr = DataExtractor(file_name)
-            except (ValueError, IndexError):
+            except (ValueError, TypeError):
                 warn = QMessageBox.warning(self, 'Message',
                                              "Wrong json format were gived!", QMessageBox.Ok)
             else:
                 return extr.result_data
+
 
     def onActivated(self):
         current_selection = self.ui.chats_list.currentText()
@@ -81,10 +82,14 @@ class View(QMainWindow):
         self.deleteItems(self.verticalLayout)
 
         for i in range(len(self.chats) - 1):
-            name = 'q_label_{}'.format(i)
+            label_name = 'q_label_{}'.format(i)
+            check_name = 'q_check_box_{}'.format(i)
             label = QLabel()
             check_box = QCheckBox()
-            label.setObjectName(name)
+            label.setObjectName(label_name)
+            check_box.setObjectName(check_name)
+            print(label_name, ", ", check_name)
+
             label.setText("{}: {}".format(self.chats[i][0], self.chats[i][2]))
 
             # if self.chats[i][0] == self.chats[i + 1][0]:
@@ -98,16 +103,19 @@ class View(QMainWindow):
             hor_layout.addWidget(check_box)
             hor_layout.setContentsMargins(0, 0, 0, 0)
             check_box.stateChanged.connect(self.item_checked)
+            check_box.clicked.connect(self.clicked_)
             self.verticalLayout.addLayout(hor_layout, 0)
             self.checks.append(check_box)
-            self.labels[name] = label
+            self.labels[label_name] = label
         self.chats.clear()
 
-    def item_checked(self, state):
+    def clicked_(self):
+        checkbox_name = self.sender().objectName()
+        print(self.labels["q_label_{}".format(checkbox_name[12:])].text())
 
+    def item_checked(self, state):
         if state == Qt.Checked:
             print("Checked!")
-
         else:
             print("Unchecked!")
 

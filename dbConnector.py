@@ -46,8 +46,6 @@ class Connector:
         select_chats = "SELECT * FROM chat"
         self.__cursor.execute(select_chats)
         records = self.__cursor.fetchall()
-        self.__cursor.close()
-        self.__cnx.close()
         return records
 
     def select_messages(self, current_selection):
@@ -67,9 +65,15 @@ class Connector:
                           "text from message where idChat = {}".format(id_ch)
         self.__cursor.execute(select_messages)
         msg_lst = self.__cursor.fetchall()
-        self.__cursor.close()
-        self.__cnx.close()
         return msg_lst
+
+    # @property
+    # def chats_list(self):
+    #     return self.__select_chats_list
+    #
+    # @property
+    # def messages(self):
+    #     return self.__select_messages
 
     @property
     def cnx(self):

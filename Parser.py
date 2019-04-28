@@ -42,5 +42,3 @@ class Parser:
     @property
     def chats(self):
         return self.__chats
-
-p = Parser()

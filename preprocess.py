@@ -45,8 +45,4 @@ class DataExtractor:
     def result_data(self):
         return self.__result_data
 
-extractor = DataExtractor("result.json")
-data = extractor.result_data
-for i in range(len(data)):
-    print(data[i]['id'])
 

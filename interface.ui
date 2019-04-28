@@ -17,9 +17,9 @@
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>10</x>
       <y>10</y>
-      <width>381</width>
+      <width>321</width>
       <height>511</height>
      </rect>
     </property>
@@ -68,7 +68,7 @@
          <rect>
           <x>0</x>
           <y>0</y>
-          <width>377</width>
+          <width>317</width>
           <height>431</height>
          </rect>
         </property>
@@ -93,9 +93,9 @@
    <widget class="QWidget" name="verticalLayoutWidget_2">
     <property name="geometry">
      <rect>
-      <x>450</x>
+      <x>380</x>
       <y>10</y>
-      <width>361</width>
+      <width>431</width>
       <height>218</height>
      </rect>
     </property>
@@ -114,7 +114,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QTextEdit" name="choosedEdit"/>
+      <widget class="QTableWidget" name="tableWidget"/>
      </item>
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout_5">
@@ -166,7 +166,7 @@
    <widget class="QPushButton" name="add_button">
     <property name="geometry">
      <rect>
-      <x>410</x>
+      <x>340</x>
       <y>90</y>
       <width>31</width>
       <height>23</height>
@@ -179,7 +179,7 @@
    <widget class="QPushButton" name="remove_button">
     <property name="geometry">
      <rect>
-      <x>410</x>
+      <x>340</x>
       <y>120</y>
       <width>31</width>
       <height>23</height>
@@ -192,9 +192,9 @@
    <widget class="QWidget" name="verticalLayoutWidget_3">
     <property name="geometry">
      <rect>
-      <x>450</x>
+      <x>380</x>
       <y>240</y>
-      <width>361</width>
+      <width>431</width>
       <height>281</height>
      </rect>
     </property>
@@ -226,7 +226,7 @@
           <rect>
            <x>0</x>
            <y>20</y>
-           <width>351</width>
+           <width>421</width>
            <height>191</height>
           </rect>
          </property>
@@ -325,6 +325,9 @@
   <action name="actionImport_3">
    <property name="text">
     <string>Import </string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
    </property>
   </action>
   <action name="actionHelp_3">

@@ -6,7 +6,7 @@ from PyQt5.QtCore import Qt
 from PyQt5 import uic, QtGui
 from PyQt5.QtWidgets import QMainWindow, QWidget, QApplication, QLabel, \
     QVBoxLayout, QHBoxLayout, QScrollArea, QFileDialog, \
-    QMessageBox, QCheckBox, QSizePolicy, QSpacerItem, QAction
+    QMessageBox, QCheckBox, QSizePolicy, QSpacerItem, QAction, QTableWidgetItem, QComboBox
 from Parser import Parser
 from preprocess import DataExtractor
 from mysql.connector.errors import IntegrityError
@@ -35,6 +35,7 @@ class View(QMainWindow):
         self.tabWidget = self.ui.tabWidget
         self.lemmatization_tab = self.ui.textEdit_2
         self.pos_tab = self.ui.textEdit_3
+        self.table = self.ui.tableWidget
 
         self.labels = dict()  # Dict of all created labels
         self.parser = Parser()  # Creating parser object
@@ -135,20 +136,25 @@ class View(QMainWindow):
         self.checked.append(checked_label)
 
     def add_chosen_messages(self):
-        print(self.checked)
-        for i in self.checked:
-            self.ui.choosedEdit.append(i.text())
-            text = i.text().split(": ")[1]
+        for i in range(len(self.checked)):
+            combo = QComboBox(self)
+            combo.addItems(["Personal", "Official", "Respectful", "Positive", "Negative"])
+            self.table.setRowCount(len(self.checked))
+            self.table.setColumnCount(2)
+            self.table.setHorizontalHeaderLabels(["Replica", "Signs"])
+            self.table.setItem(i, 0, QTableWidgetItem(self.checked[i].text()))
+            self.table.setCellWidget(i, 1, combo)
+            self.table.resizeColumnsToContents()
+            text = self.checked[i].text().split(": ")[1]
             self.messages_to_analyze.append(text)
         self.checked.clear()
 
     def clear_chosen_messages(self):
-        self.ui.choosedEdit.clear()
+        self.table.clear()
         self.ui.textEdit_2.clear()
         self.ui.textEdit_3.clear()
 
     def analyze(self):
-        print("Hello")
         analyzer = Analyzer(self.messages_to_analyze, language=self.lang)
         for lemmas in analyzer.lemmatization():
             self.lemmatization_tab.append(str(lemmas))

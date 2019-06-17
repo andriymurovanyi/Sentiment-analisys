@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>icons/import-icon.png</file>
+    <file>icons/Users-Exit-icon.png</file>
+    <file>icons/Business-Questions-icon.png</file>
+  </qresource>
+</RCC>

@@ -1,10 +1,8 @@
 # Created by hiddencoder at 23.04.2019
-
-from nltk import word_tokenize, pos_tag, chunk
+import json
+import string
+from nltk import word_tokenize, pos_tag
 from nltk.stem import WordNetLemmatizer
-
-from Parser import Parser
-from string import ascii_lowercase
 from textblob import TextBlob
 import pymorphy2
 
@@ -13,37 +11,13 @@ class Analyzer:
     """
     Class which contains main app logic.
     """
+
     def __init__(self, replicas, language="eng"):
         if isinstance(replicas, list) or isinstance(replicas, str):
             self.__language = language
             self.__replicas = replicas
         else:
             raise ValueError("Wrong data type was given")
-
-    @staticmethod
-    def text_cleaner(text):
-        """
-        Clean data.
-
-        Method for cleaning punctuation marks, turning all words to lowercase
-        :param text: text for cleaning
-        :return: cleaned text
-        """
-
-        text = text.lower()
-
-        # Ru and Eng alphabet
-        en_alpha = ascii_lowercase
-        ru_alpha = 'абвгдеёжзийклмнопрстуфхцчшщъыьэюя'
-
-        # Text cleaning
-        cleaned_text = ''
-        for char in text:
-            if (char.isalpha() and (char in ru_alpha or char in en_alpha)) \
-                    or (char == ' '):
-                cleaned_text += char
-
-        return cleaned_text
 
     @staticmethod
     def tokenization(sentence):
@@ -54,51 +28,61 @@ class Analyzer:
         :return:
         """
         tokens = word_tokenize(sentence)
+        tokens = [i.lower() for i in tokens if i not in string.punctuation]
         return tokens
 
-    def lemmatization(self):
-        """
-        Lemmatization.
-
-        Word transformation to it's normal form - Lemma
-        :return: Lemmas list
-        """
-        lemmas = []
-
+    def lemmatize_word(self, word):
         if self.__language == "eng":
-            lemmatizer = WordNetLemmatizer()
-            for replica in self.__replicas:
-                replica = self.text_cleaner(replica).split()
-                for word in replica:
-                    lemmas.append("(" + word + " --> " + lemmatizer.lemmatize(word, pos="v") + ")")
-                lemmas.append('\n')
-        elif self.__language == "rus":
+            return WordNetLemmatizer().lemmatize(word, pos="v")
+        else:
             morph = pymorphy2.MorphAnalyzer()
-            for replica in self.__replicas:
-                r = replica.split()
-                for word in r:
-                    p = morph.parse(word)[0]
-                    lemmas.append("(" + word + " --> " + p.normal_form + ")")
+            p = morph.parse(word)[0]
+            return p.normal_form
 
-
-        return lemmas
-
-    def pos_tagging(self):
+    def pos_tag_sentence(self, sentence):
         """
         PoS-tagging.
 
         Method for Part-of-Speech tagging
         :return: tags for all words in sentence
         """
-        tagged = []
+        if self.__language == "eng":
+            return pos_tag(self.tokenization(sentence))
+        elif self.__language == "rus":
+            morph = pymorphy2.MorphAnalyzer()
+            return list(map(lambda x: tuple([x, morph.parse(x)[0].tag.POS]),
+                            self.tokenization(sentence)))
 
-        for item in self.__replicas:
-            tagged.append(pos_tag(word_tokenize(item), lang=self.__language))
-        return tagged
+    @staticmethod
+    def sentiment(sentences):
+        sentiments = []
+        for item in sentences:
+            blob = TextBlob(item)
+            sentiments.append((item, blob.sentiment))
+        return sentiments
+
+    @staticmethod
+    def get_pos_description(tag):
+        with open("PoS_description.json", 'r', encoding="utf-8")as file:
+            data = json.load(file)
+        tag_description = data["tags"][tag]
+        return tag_description
 
     @staticmethod
     def detect_language(sentence):
-        return TextBlob(sentence).detect_language()
+        """
+        Language detecting.
+
+        Used to detect language of sentence
+        :param sentence: string sentence
+        :return: language
+        """
+        result = TextBlob(sentence).detect_language()
+        if result == "ru":
+            result += "s"
+        elif result == "en":
+            result += "g"
+        return result
 
     @property
     def language(self):
@@ -111,5 +95,14 @@ class Analyzer:
     # TODO 5) Уважительное / не уважительное
     # TODO 6) ... !!!
 
+
+# if __name__ == '__main__':
+    # m = Analyzer(["У меня есть идея!"], language="rus")
+    # print(m.pos_tag_sentence("У меня есть идея"))
+    # # print(m.lemmatize_word("works"))
+    # print(m.detect_language("I have an idea"))
+    #
+    #
+    # m.tokenization("Ths &is [an] example? {of} string. with.? punctuation!!!!i")
 
 

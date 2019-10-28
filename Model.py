@@ -87,22 +87,3 @@ class Analyzer:
     @property
     def language(self):
         return self.__language
-
-    # TODO 1) Личное отношение / безличное
-    # TODO 2) Официальное / не официальное
-    # TODO 3) Доброжелательное или нет
-    # TODO 4) Позитивное негативное отношение к собеседнику(!).
-    # TODO 5) Уважительное / не уважительное
-    # TODO 6) ... !!!
-
-
-# if __name__ == '__main__':
-    # m = Analyzer(["У меня есть идея!"], language="rus")
-    # print(m.pos_tag_sentence("У меня есть идея"))
-    # # print(m.lemmatize_word("works"))
-    # print(m.detect_language("I have an idea"))
-    #
-    #
-    # m.tokenization("Ths &is [an] example? {of} string. with.? punctuation!!!!i")
-
-

@@ -203,16 +203,3 @@ class DataBase:
             self.__cursor.execute(SQL_INSERT_RESULTS, (polarity, subjectivity, idMessage))
             self.__cnx.commit()
 
-
-
-
-
-
-
-
-
-
-
-
-
-

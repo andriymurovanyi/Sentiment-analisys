@@ -1,2 +1,2 @@
-# Sentiment-anylisys
-Sentiment analysis methods testing module for text correspondence.
+# Sentiment-analisys
+Sentiment analysis methods testing module for text conversation.
